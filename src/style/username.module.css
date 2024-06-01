@@ -1,0 +1,52 @@
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 4px 40px #4747470b;
+  border-radius: 16px;
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* height: 100vh; */
+  min-height: 380px;
+  @apply border-4 border-gray-50 shrink-0  w-[26%]
+    rounded-3xl py-10 px-5 min-w-max;
+}
+
+.img {
+  @apply border-4 border-gray-100 w-[135px] h-[135px] rounded-full shadow-lg cursor-pointer;
+  @apply hover:border-gray-200;
+}
+
+.textBox {
+  @apply border-0 py-3 px-4 w-3/4 mx-auto rounded-xl text-lg shadow-sm;
+  @apply focus:outline-none;
+}
+
+.btn {
+  @apply py-3 px-5 border w-3/4 mx-auto rounded-lg text-gray-50 shadow-sm text-xl text-center;
+  background-color: #6366f1 !important;
+}
+
+.btn:hover {
+  background-color: #ff6a6a !important;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+/* 404 page ... */
+.main {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  margin-top: 7rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.5rem;
+    margin-top: 2.5rem;
+  }
+}
